@@ -4,6 +4,25 @@
 
 The Unified Logging System is a centralized logging framework built using Python and Flask. It standardizes log generation across multiple modules and stores logs in a common JSON format for debugging, monitoring, and analytics.
 
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+### Start Flask API
+
+```bash
+python app/api.py
+```
+### Sample API Request
+
+```bash
+curl -X POST http://127.0.0.1:5000/log \
+-H "Content-Type: application/json" \
+-d "{\"module\":\"test\",\"event\":\"api_test\",\"data\":{\"status\":\"success\"}}"
+```
+
+
 ## Objective
 
 * Standardize logs across all modules
@@ -21,6 +40,7 @@ The Unified Logging System is a centralized logging framework built using Python
 * Flask API endpoint for log ingestion
 * JSON-based storage
 * Sample module integration
+* The system implements log rotation. When the log file exceeds a predefined size limit, it is automatically renamed to logs_backup.json and a new logs.json file is created. This prevents excessive log growth and improves performance during high-frequency logging.
 
 ---
 
