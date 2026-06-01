@@ -12,6 +12,16 @@ def create_log():
 
     data = request.json
 
+    required_fields = ["module", "event", "data"]
+
+    for field in required_fields:
+
+        if field not in data:
+
+            return jsonify({
+                "error": f"Missing field: {field}"
+            }), 400
+
     log_event(
         module=data["module"],
         event=data["event"],

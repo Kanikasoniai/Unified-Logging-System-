@@ -1,0 +1,5 @@
+{"module": "auth", "event": "user_login", "timestamp": "2026-06-01T12:27:34.680792", "data": {"user_id": 101}}
+{"module": "evaluation", "event": "score_generated", "timestamp": "2026-06-01T12:27:37.054440", "data": {"score": 95}}
+{"module": "notification", "event": "email_sent", "timestamp": "2026-06-01T12:27:38.740863", "data": {"recipient": "student@gmail.com"}}
+{"module": "auth", "event": "user_login", "timestamp": "2026-06-01T12:27:40.602797", "data": {"user_id": 101}}
+{"module": "evaluation", "event": "score_generated", "timestamp": "2026-06-01T12:27:41.543275", "data": {"score": 95}}
