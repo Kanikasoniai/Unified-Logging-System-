@@ -1,0 +1,5 @@
+
+{"module": "auth", "event": "user_login", "timestamp": "2026-05-31T14:27:30.148765", "data": {"user_id": 101}}
+{"module": "evaluation", "event": "score_generated", "timestamp": "2026-05-31T14:31:52.941771", "data": {"score": 95}}
+{"module": "notification", "event": "email_sent", "timestamp": "2026-05-31T14:32:09.046389", "data": {"recipient": "student@gmail.com"}}
+{"module": "test", "event": "api_test", "timestamp": "2026-05-31T14:40:52.867812", "data": {"status": "success"}}
